@@ -1,0 +1,56 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+img{
+  height: 75px;
+  width: 75px;
+}
+
+.music{
+  padding-left:0;
+  padding-right:0;
+}
+
+i.fa-play-circle{
+    display: flex;
+    align-self: center;
+}
+
+img.imgPlay{
+  height: 300px;
+  width: 300px;
+}
+
+.musicPlayer{
+  display: flex;
+  justify-content: center;
+}
+
+.timePlayer{
+  align-items: baseline;
+}
+
+i.fa-backward{
+  font-size: 30px;
+}
+
+i.fa-play{
+  font-size: 30px;
+}
+
+i.fa-forward{
+  font-size: 30px;
+}
+
+.arrow{
+  font-size:20px;
+}
+
+.ellipsis{
+  font-size:20px;
+}
+
+i.fa-play-circle{
+  font-size:25px;
+}
