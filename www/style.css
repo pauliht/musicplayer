@@ -14,7 +14,8 @@ img{
 
 i.fa-play-circle{
     display: flex;
-    align-self: center;
+  align-self: center;
+  cursor: pointer;
 }
 
 img.imgPlay{
@@ -33,14 +34,17 @@ img.imgPlay{
 
 i.fa-backward{
   font-size: 30px;
+  cursor: pointer;
 }
 
 i.fa-play{
   font-size: 30px;
+  cursor: pointer;
 }
 
 i.fa-forward{
   font-size: 30px;
+  cursor: pointer;
 }
 
 .arrow{
@@ -53,4 +57,17 @@ i.fa-forward{
 
 i.fa-play-circle{
   font-size:25px;
+  cursor: pointer;
+}
+
+.list-group button{
+  cursor: pointer;
+}
+
+i.fa-random{
+  cursor: pointer;
+}
+
+i.fa-redo-alt{
+  cursor: pointer;
 }
