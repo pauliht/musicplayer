@@ -5,9 +5,9 @@ $(".fa-angle-left").click(function () {
   $(".playlistLeft").toggle();
 });
 
-$(".fa-angle-right").click(function () { 
+/* $(".fa-angle-right").click(function () { 
   $(".playlistRight").toggle();
-});
+}); */
 
 
 
