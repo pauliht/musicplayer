@@ -3,8 +3,9 @@
 }
 
 img{
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
 }
 
 .music{
@@ -16,16 +17,19 @@ img{
 i.fa-play-circle{
   display: flex;
   align-self: center;
-  cursor: pointer;
   }
 
 i.fa-play-circle:hover{
   color: grey;
 }
 
+.playlistRight i.fas:hover{
+  color: grey;
+}
+
 img.imgPlay{
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 400px;
 }
 
 .musicPlayer{
@@ -39,17 +43,14 @@ img.imgPlay{
 
 i.fa-backward{
   font-size: 30px;
-  cursor: pointer;
 }
 
 i.fa-play{
   font-size: 30px;
-  cursor: pointer;
 }
 
 i.fa-forward{
   font-size: 30px;
-  cursor: pointer;
 }
 
 .arrow{
@@ -62,26 +63,13 @@ i.fa-forward{
 
 i.fa-play-circle{
   font-size:25px;
-  cursor: pointer;
 }
 
 .list-group button{
   cursor: pointer;
 }
 
-i.fa-random{
-  cursor: pointer;
-}
-
-i.fa-redo-alt{
-  cursor: pointer;
-}
-
-i.fa-angle-left{
-  cursor: pointer;
-}
-
-i.fa-ellipsis-v{
+i.fas{
   cursor: pointer;
 }
 
@@ -89,4 +77,29 @@ i.fa-ellipsis-v{
   .playlistLeft{
     display: none;
   }
+}
+
+@media only screen and (max-width: 800px){
+  i.fa-angle-left{
+    display: none;
+  }
+}
+
+button:focus{
+  outline: none;
+}
+
+.playlistLeft{
+  max-height: 760px;
+  overflow: scroll;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+@media only screen and (max-width: 800px){
+  .playlistRight{
+    max-height: 600px;
+  }
+}
 }
