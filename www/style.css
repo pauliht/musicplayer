@@ -9,13 +9,18 @@ img{
 
 .music{
   padding-left:0;
-  padding-right:0;
+  padding-right:0; 
+  border-right: 1px solid #fff;
 }
 
 i.fa-play-circle{
-    display: flex;
+  display: flex;
   align-self: center;
   cursor: pointer;
+  }
+
+i.fa-play-circle:hover{
+  color: grey;
 }
 
 img.imgPlay{
@@ -70,4 +75,18 @@ i.fa-random{
 
 i.fa-redo-alt{
   cursor: pointer;
+}
+
+i.fa-angle-left{
+  cursor: pointer;
+}
+
+i.fa-ellipsis-v{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+  .playlistLeft{
+    display: none;
+  }
 }
