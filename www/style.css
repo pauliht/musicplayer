@@ -59,11 +59,11 @@ i.fa-forward{
 }
 
 .arrow{
-  font-size:20px;
+  font-size: 20px;
 }
 
 .ellipsis{
-  font-size:20px;
+  font-size: 20px;
 }
 
 i.fa-play-circle{
@@ -96,29 +96,28 @@ i.fas{
   }
 }
 
-
-
 button:focus{
   outline: none;
 }
 
-.playlistLeft{
-  max-height: 760px;
-  overflow: scroll;
-}
 ::-webkit-scrollbar { 
     display: none; 
 }
 
-@media only screen and (max-width: 800px){
+/* @media only screen and (max-width: 800px){
   .playlistRight{
     max-height: 600px;
   }
-}
+} */
 
 #controlBoarder{
 display: flex;
 align-items: center;
+}
+
+.musiclist{
+  height: calc(100vh - 112px);
+  overflow: scroll;
 }
 
 
