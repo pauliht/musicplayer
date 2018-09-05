@@ -5,13 +5,16 @@ $(".fa-angle-left").click(function () {
   $(".playlistLeft").toggle();
 });
 
-/* $(".fa-angle-right").click(function () { 
-  $(".playlistRight").toggle();
-}); */
+$(".fa-angle-right").click(function () { 
+  $(".playlistLeft").toggle();
+});
 
 
 
-
+function myFunction() {
+  var x = document.getElementById('#playSong1').duration;
+  document.getElementById("final_song.mp3").innerHTML = x;
+}
 
 
 /* $('.laggen-btn').click(function(){
