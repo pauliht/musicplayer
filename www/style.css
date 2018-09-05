@@ -2,6 +2,11 @@
   box-sizing: content-box;
 }
 
+body{
+  background-image: url("/img/final_song.jpg");
+  background-repeat: no-repeat;
+}
+
 img{
   height: 100px;
   width: 100px;
@@ -11,7 +16,7 @@ img{
 .music{
   padding-left:0;
   padding-right:0; 
-  border-right: 2px dotted #fff;
+  border-right: 2px solid #fff;
 }
 
 i.fa-play-circle{
@@ -85,6 +90,14 @@ i.fas{
   }
 }
 
+@media only screen and (min-width: 0px){
+  i.fa-angle-right{
+    display: none;
+  }
+}
+
+
+
 button:focus{
   outline: none;
 }
@@ -101,7 +114,9 @@ button:focus{
   .playlistRight{
     max-height: 600px;
   }
-}#controlBoarder{
+}
+
+#controlBoarder{
 display: flex;
 align-items: center;
 }
