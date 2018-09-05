@@ -11,7 +11,7 @@ img{
 .music{
   padding-left:0;
   padding-right:0; 
-  border-right: 1px solid #fff;
+  border-right: 2px dotted #fff;
 }
 
 i.fa-play-circle{
@@ -45,8 +45,8 @@ i.fa-backward{
   font-size: 30px;
 }
 
-i.fa-play{
-  font-size: 30px;
+#playMe{
+  font-size: 65px;
 }
 
 i.fa-forward{
@@ -101,5 +101,9 @@ button:focus{
   .playlistRight{
     max-height: 600px;
   }
+}#controlBoarder{
+display: flex;
+align-items: center;
 }
-}
+
+
