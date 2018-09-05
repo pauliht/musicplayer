@@ -9,12 +9,11 @@ $(".fa-angle-right").click(function () {
   $(".playlistLeft").toggle();
 });
 
+$("#final_song").click(function () { 
+  $(this).find('audio')[0].play();
+});
 
 
-function myFunction() {
-  var x = document.getElementById('#playSong1').duration;
-  document.getElementById("final_song.mp3").innerHTML = x;
-}
 
 
 /* $('.laggen-btn').click(function(){
