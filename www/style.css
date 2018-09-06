@@ -15,7 +15,7 @@ img{
   object-fit: cover;
 }
 
-.music{
+.playlistleft{
   padding-left:0;
   padding-right:0; 
   border-right: 2px solid #fff;
@@ -34,7 +34,7 @@ i.fa-play-circle:hover{
   color: grey;
 }
 
-.playlistright{
+.music {
   background-color: rgba(0, 0, 0, 0.5)
 }
 
@@ -121,7 +121,7 @@ display: flex;
 align-items: center;
 }
 
-.musiclist{
+.playlistleft{
   height: calc(100vh - 112px);
   overflow: scroll;
 }
