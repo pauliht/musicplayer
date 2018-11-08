@@ -1,3 +1,37 @@
+let musicList= [
+  {
+    artist = "MØ",
+    song = "Don't leave",
+    mp3 = /mp3/dont_leave.mp3,
+    pic = /img/dont_leave.jpg
+  },
+  {
+    artist = "Lykke Li",
+    song = "I follow rivers",
+    mp3 = /mp3/i_follow_rivers.mp3,
+    pic = /img/i_follow_rivers.jpg
+  },
+  {
+    artist = "Amy Windehouse",
+    song = "Back to black",
+    mp3 = /mp3/back_to_black.mp3,
+    pic = /img/back_to_black.jpg
+  },
+  {
+    artist = "Tove Lo",
+    song = "Disco tits",
+    mp3 = /mp3/disco_tits.mp3,
+    pic = /img/disco_tits.jpg
+  },
+  {
+    artist = "MØ",
+    song = "BB",
+    mp3 = /mp3/bb.mp3,
+    pic = /img/bb.jpg
+  }
+]
+
+
 let tags = document.getElementsByTagName("LI");
 function playSong(){
   for(let tag of tags){
