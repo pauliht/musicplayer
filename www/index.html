@@ -29,83 +29,17 @@
         <!-- LEFT -->
         <div class="playlistleft col p-0 mt-2">
           <ul class="list-group">
-            <!-- <li id="final_song" type="button" class="list-group-item list-group-item-action d-flex">
-              <img src="/img/final_song.jpg" class="rounded float-left p-2" alt="final_song">
-              <div class="artistsong p-2">
-                <span>
-                  <p>MØ</p>
-                </span>
-                <span>
-                  <p>Final song</p>
-                </span>
-              </div>
-              <i class="fas fa-play-circle ml-auto p-2"></i>
-              <audio id="audio-final_song" src="/mp3/final_song.mp3" type="audio/mpeg"></audio>
-            </li>
-            <li id="dont_leave" type="button" class="list-group-item list-group-item-action d-flex">
-              <img src="/img/dont_leave.jpg" class="rounded float-left p-2" alt="don't_leave">
-              <div class="p-2">
-                <p class="mb-0">MØ</p>
-                <p>Don't leave</p>
-              </div>
-              <i class="fas fa-play-circle ml-auto p-2"></i>
-              <audio id="audio-dont_leave" src="/mp3/dont_leave.mp3"></audio>
-            </li>
-            <li id="bb" type="button" class="playSong list-group-item list-group-item-action d-flex">
-              <img src="/img/bb.jpg" class="rounded float-left p-2" alt="bb">
-              <div class="p-2">
-                <p class="mb-0">MØ</p>
-                <p>BB</p>
-              </div>
-              <i class="fas fa-play-circle ml-auto p-2"></i>
-              <audio id="audio-bb" src="/mp3/bb.mp3"></audio>
-            </li>
-            <li id="nights_with_you" type="button" class=" list-group-item list-group-item-action d-flex">
-              <img src="/img/nights_with_you.jpg" class="rounded float-left p-2" alt="nights_with_you">
-              <div class="p-2">
-                <p class="mb-0">MØ</p>
-                <p>Nights with you</p>
-              </div>
-              <i class="fas fa-play-circle ml-auto p-2"></i>
-              <audio id="audio-nights_with_you" src="/mp3/nights_with_you.mp3"></audio>
-            </li>
-            <li id="i_follow_rivers" type="button" class=" list-group-item list-group-item-action d-flex">
-              <img src="/img/i_follow_rivers.jpg" class="rounded float-left p-2" alt="nights_with_you">
-              <div class="p-2">
-                <p class="mb-0">Lykke Li</p>
-                <p>I follow rivers</p>
-              </div>
-              <i class="fas fa-play-circle ml-auto p-2"></i>
-              <audio id="audio-i_follow_rivers" src="/mp3/i_follow_rivers.mp3"></audio>
-            </li>
-            <li id="back_to_black" type="button" class=" list-group-item list-group-item-action d-flex">
-              <img src="/img/back_to_black.jpg" class="rounded float-left p-2" alt="nights_with_you">
-              <div class="p-2">
-                <p class="mb-0">Amy Winehouse</p>
-                <p>Back to black</p>
-              </div>
-              <i class="fas fa-play-circle ml-auto p-2"></i>
-              <audio id="audio-back_to_black" src="/mp3/back_to_black.mp3"></audio>
-            </li>
-            <li id="disco_tits" type="button" class=" list-group-item list-group-item-action d-flex">
-              <img src="/img/disco_tits.jpg" class="rounded float-left p-2" alt="nights_with_you">
-              <div class="p-2">
-                <p class="mb-0">Tove Lo</p>
-                <p>Disco tits</p>
-              </div>
-              <i class="fas fa-play-circle ml-auto p-2"></i>
-              <audio id="audio-disco_tits" src="/mp3/disco_tits.mp3"></audio>
-            </li> -->
+            
           </ul>
         </div>
         <!-- RIGHT -->
         <div class="playlistright col p-0 mt-2 mb-2">
-          <div class="musicplayer"><img class="imgplay" src="/img/final_song.jpg" alt="final_song"></div>
+          <div class="musicplayer"><img class="imgplay" src="/img/dont_leave.jpg" alt="final_song"></div>
           <div class="d-flex justify-content-between pt-4 pt-3">
             <div><i class="fas fa-plus ml-5"></i></div>
             <div>
-              <h5 class="card-title mb-0">MØ</h5>
-              <p class="card-text">Final song</p>
+              <h5 class="player__currently-playing__songartist card-title mb-0"></h5>
+              <p class="player__currently-playing__songtitle card-text"></p>
             </div>
             <div><i class="far fa-heart mr-5"></i></div>
           </div>
@@ -121,8 +55,8 @@
           <div id="controlBoarder" class="d-flex justify-content-between mt-4">
             <div class="ml-5"><i class="fas fa-redo-alt"></i></div>
             <div><i class="fas fa-backward"></i></div>
-            <div><i id="playme" class="fas fa-play-circle"></i></div>
-            <div><i class="fas fa-forward"></i></div>
+            <div class="play-button-right"><i id="playme" class="fas fa-play-circle"></i></div>
+            <div class="player__button_next"><i class="fas fa-forward"></i></div>
             <div class="mr-5"><i class="fas fa-random"></i></div>
           </div>
         </div>

@@ -3,10 +3,11 @@
 }
 
 body{
-  background-image: url("/img/final_song.jpg");
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
 
 img{
@@ -26,6 +27,7 @@ img{
 i.fa-play-circle{
   display: flex;
   align-self: center;
+  color: #fff;
   }
 
 i.fa-play-circle:hover{
@@ -80,6 +82,7 @@ i.fa-play-circle{
 
 .list-group li{
   cursor: pointer;
+  background-color: black;
 }
 
 i.fas{

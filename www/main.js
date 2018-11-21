@@ -1,10 +1,9 @@
-let musicList= [
+let musiclist= [
   {
-    
-    artist: "Lady Gaga",
-    song: "Million reasons",
-    mp3: "/mp3/dont_leave.mp3",
-    pic: "/img/million_reasons.jpg"
+    artist: "MØ",
+    song: "BB",
+    mp3: "/mp3/bb.mp3",
+    pic: "/img/bb.jpg"
   },
   {
     artist: "MØ",
@@ -32,13 +31,16 @@ let musicList= [
   },
   {
     artist: "MØ",
-    song: "BB",
-    mp3: "/mp3/bb.mp3",
-    pic: "/img/bb.jpg"
+    song: "Don't leave",
+    mp3: "/mp3/dont_leave.mp3",
+    pic: "/img/dont_leave.jpg"
   }
 ]
 
-musicList.forEach((item, index) =>{
+let audio = musiclist[0];
+
+
+musiclist.forEach((item, index) =>{
   $('.list-group').append(`
   <li id="final_song" type="button" class="list-group-item list-group-item-action d-flex">
   <img src=${item.pic} class="rounded float-left p-2" alt="final_song">
@@ -56,8 +58,62 @@ musicList.forEach((item, index) =>{
   `)
 })
 
- 
+let playing = false;
 
+const playSong = (index) => {
+  if(audio.item) {
+    audio.item.pause();
+  }
+  playing = false;
+  audio.item = new Audio(musiclist[0].mp3);
+  playButton();
+  currentPlay(index);
+}
+
+const playButton = () => {
+  let val;
+
+  if(playing) {
+    audio.item.pause();
+    val = 'fa-play-circle';
+    playing = false;
+  }
+  else {
+    audio.item.play();
+    val = 'fa-pause';
+    playing = true;
+  }
+
+  $(".play-button-right").html(`<i class="fas ${val}"></i>`)
+}
+
+const currentlyPlaying = () => {
+  $('.player__currently-playing__songtitle').text(musiclist[index].song);
+  $('.player__currently-playing__songartist').text(musiclist[index].artist);
+  $('.player__albumcover').attr('src', musiclist[index].pic);
+  $('body').css('background-image', `url(${musiclist[index].pic})`);
+  audio.track.addEventListener('timeupdate', playerData);
+}
+
+//Eventhandler
+
+
+$(document).on('click', '.player__button_play', handlePlayButton);
+// next player__buttons
+$('.player__button_next').on('click', function() {
+  let value = $(this).data('next');
+  playingIndex += value;
+  playingIndex > 0 ? playingIndex : playingIndex = 0;
+  playThisSong(playingIndex);
+})
+// playlist play Song
+$('.playlist__song__playbutton').click(function() {
+  playingIndex = $(this).closest('.playlist__song').data('track');
+  playThisSong(playingIndex);
+  togglePlaylistMenu();
+});
+
+playThisSong(0);
 
 
 
