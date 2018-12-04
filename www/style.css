@@ -2,6 +2,11 @@
   box-sizing: content-box;
 }
 
+.title{
+  color: #171e3c;
+
+}
+
 body{
   
   background-repeat: no-repeat;
@@ -83,6 +88,12 @@ i.fa-play-circle{
 .list-group li{
   cursor: pointer;
   background-color: black;
+  color: #fff;
+}
+
+.list-group li:hover{
+  background-color: #171e3c;
+  color: #fff;
 }
 
 i.fas{
