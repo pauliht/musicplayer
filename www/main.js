@@ -59,17 +59,26 @@ musiclist.forEach((track, index) =>{
 })
 
 let isPlaying = false;
-
 let audioTrack = new Audio(musiclist[0].mp3);
 
+//play and pause 
 function playPauseSong(){
+  let styleButton;
   if (isPlaying) {
     audioTrack.pause();
     isPlaying = false;
+    styleButton = 'fa-play-circle';
   } else {
     audioTrack.play();
     isPlaying = true;
+    styleButton = 'fa-pause-circle';
+
   }
+  //Switches between play button and pause button
+  $('.play-button-progress-bar').html(`<i class="fas ${styleButton}"></i>`);
 }
 
 $(document).on('click', '.track', playPauseSong );
+
+$(document).on('click', '.play-button-progress-bar', playPauseSong);
+
