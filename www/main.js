@@ -42,7 +42,7 @@ let audio = musiclist[0];
 
 musiclist.forEach((track, index) =>{
   $('.musicList').append(`
-  <li type="button" class="list-group-item list-group-item-action d-flex">
+  <li type="button" class="list-group-item list-group-item-action track d-flex">
   <img src=${track.pic} class="rounded float-left p-2" alt="final_song">
   <div class="artistsong p-2">
     <span>
@@ -53,8 +53,23 @@ musiclist.forEach((track, index) =>{
     </span>
   </div>
   <i class="fas fa-play-circle ml-auto p-2"></i>
-  <audio id="audio-final_song" src=${track.mp3} type="audio/mpeg"></audio>
+  <audio src=${track.mp3} type="audio/mpeg"></audio>
   </li>
   `)
 })
 
+let isPlaying = false;
+
+let audioTrack = new Audio(musiclist[0].mp3);
+
+function playPauseSong(){
+  if (isPlaying) {
+    audioTrack.pause();
+    isPlaying = false;
+  } else {
+    audioTrack.play();
+    isPlaying = true;
+  }
+}
+
+$(document).on('click', '.track', playPauseSong );
