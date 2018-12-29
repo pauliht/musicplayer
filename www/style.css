@@ -85,13 +85,13 @@ i.fa-play-circle{
   font-size:25px;
 }
 
-.list-group li{
+.musicList li{
   cursor: pointer;
   background-color: black;
   color: #fff;
 }
 
-.list-group li:hover{
+.musicList li:hover{
   background-color: #171e3c;
   color: #fff;
 }
